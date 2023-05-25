@@ -8,6 +8,5 @@ pubspec.lock
 .flutter-plugins
 .flutter-plugins-dependencies
 .gitattributes
-hive/
 build/
 coverage/
