@@ -1,3 +1,15 @@
+## Features
+
+TODO: Essa lib é responsavel pelas regras de banco de dados locais do app
+
+## Getting started
+  Adicione o package como depenencia no pubspec
+  ```
+  manga_easy_persistent_database_service:
+     git: 
+      url: https://github.com/manga-easy/manga_easy_persistent_database_service.git
+      ref: v1.0.0
+  ```
 ## Usage
 
 ```dart
