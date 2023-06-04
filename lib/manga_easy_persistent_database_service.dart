@@ -8,3 +8,5 @@ export 'src/hive/hive_db_service.dart';
 export 'src/hive/box_hive_enum.dart';
 export 'src/sembast/sembast_db_service.dart';
 export 'src/sembast/store_sembast_enum.dart';
+export 'src/user_preference/key_preference.dart';
+export 'src/user_preference/preference_service.dart';
