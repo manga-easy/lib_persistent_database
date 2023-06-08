@@ -38,6 +38,8 @@ enum KeyPreferences {
   salvePag(key: 'spc'),
   // Preferencias do usuario
   prefsUser(key: 'UserConfigModel'),
+  // Muda o layout da pesquisa avançada
+  selectLayoutSearch(key: 'selectLayoutSearch', defaultValue: false),
   // indice do tema atual em int
   theme(key: 'themeApp', defaultValue: 0);
 

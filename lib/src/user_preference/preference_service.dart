@@ -6,16 +6,16 @@ class PreferenceService {
 
   PreferenceService(this._persistentDatabaseSembastService);
 
-  Future<T> get<T>({required KeyPreferences keybox}) async {
+  Future<T> get<T>({required KeyPreferences keyPreferences}) async {
     final result = await _persistentDatabaseSembastService.get(
-      id: keybox.key,
+      id: keyPreferences.key,
       store: StoreSembast.userPreference,
     );
     if (result == null) {
-      return keybox.defaultValue;
+      return keyPreferences.defaultValue;
     }
     final userPreference = UserPreferenceEntity.fromJson(result);
-    return userPreference.value ?? keybox.defaultValue;
+    return userPreference.value ?? keyPreferences.defaultValue;
   }
 
   Future<void> put<T>({
