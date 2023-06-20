@@ -1,1 +1,1 @@
-enum StoreSembast { host, toggle, notification, userPreference }
+enum StoreSembast { host, toggle, notification, userPreference, exemple }
