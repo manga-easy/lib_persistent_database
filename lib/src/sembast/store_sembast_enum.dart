@@ -1,1 +1,9 @@
-enum StoreSembast { host, toggle, notification, userPreference, exemple }
+enum StoreSembast {
+  host,
+  @Deprecated('Será excluido na versão 0.14')
+  toggle,
+  notification,
+  userPreference,
+  exemple,
+  toggleConfig
+}
