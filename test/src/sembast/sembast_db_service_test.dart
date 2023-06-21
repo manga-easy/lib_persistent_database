@@ -1,9 +1,9 @@
-import 'package:manga_easy_persistent_database_service/src/sembast/sembast_db_service.dart';
-import 'package:manga_easy_persistent_database_service/src/sembast/store_sembast_enum.dart';
+import 'package:persistent_database/src/sembast/sembast_database.dart';
+import 'package:persistent_database/src/sembast/store_sembast_enum.dart';
 import 'package:test/test.dart';
 
 void main() {
-  final db = PersistentDatabaseSembastService();
+  final db = PersistentDatabaseSembast();
   setUpAll(() async {
     await db.starting();
     await db.deleteAll(store: StoreSembast.notification);

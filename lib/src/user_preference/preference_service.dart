@@ -1,13 +1,13 @@
-import 'package:manga_easy_persistent_database_service/manga_easy_persistent_database_service.dart';
-import 'package:manga_easy_persistent_database_service/src/user_preference/user_preference_entity.dart';
+import 'package:persistent_database/persistent_database.dart';
+import 'package:persistent_database/src/user_preference/user_preference_entity.dart';
 
-class PreferenceService {
-  final PersistentDatabaseSembastService _persistentDatabaseSembastService;
+class Preference {
+  final PersistentDatabaseSembast _persistentDatabaseSembast;
 
-  PreferenceService(this._persistentDatabaseSembastService);
+  Preference(this._persistentDatabaseSembast);
 
   Future<T> get<T>({required KeyPreferences keyPreferences}) async {
-    final result = await _persistentDatabaseSembastService.get(
+    final result = await _persistentDatabaseSembast.get(
       id: keyPreferences.key,
       store: StoreSembast.userPreference,
     );
@@ -22,7 +22,7 @@ class PreferenceService {
     required T value,
     required KeyPreferences keyPreferences,
   }) async {
-    await _persistentDatabaseSembastService.update(
+    await _persistentDatabaseSembast.update(
       id: keyPreferences.key,
       objeto: UserPreferenceEntity(
         value: value,
@@ -33,7 +33,7 @@ class PreferenceService {
   }
 
   Future<void> delete({required KeyPreferences keyPreferences}) async {
-    await _persistentDatabaseSembastService.delete(
+    await _persistentDatabaseSembast.delete(
       id: keyPreferences.key,
       store: StoreSembast.userPreference,
     );

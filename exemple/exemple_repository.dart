@@ -1,15 +1,15 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
-import 'package:manga_easy_persistent_database_service/manga_easy_persistent_database_service.dart';
+import 'package:persistent_database/persistent_database.dart';
 
 class ExempleRepository {
-  final PersistentDatabaseSembastService _persistentDatabaseSembastService;
+  final PersistentDatabaseSembast _persistentDatabaseSembast;
 
-  ExempleRepository(this._persistentDatabaseSembastService);
+  ExempleRepository(this._persistentDatabaseSembast);
 
   void create(ExempleEntity entity) async {
-    final id = await _persistentDatabaseSembastService.create(
+    final id = await _persistentDatabaseSembast.create(
       objeto: entity.toMap(),
       store: StoreSembast.exemple,
       id: entity.id, // se não passa id ele cria um uuid para registro

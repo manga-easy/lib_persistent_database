@@ -1,4 +1,4 @@
-abstract class PersistentDatabaseService<T> {
+abstract class PersistentDatabase<T> {
   abstract final String version;
 
   Future<void> starting();

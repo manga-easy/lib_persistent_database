@@ -1,5 +1,5 @@
-name: manga_easy_persistent_database_service
-description: A starting point for Dart libraries or applications.
+name: persistent_database
+description: lib para persistencia de dados locais.
 version: 1.0.0
 # repository: https://github.com/my_org/my_repo
 

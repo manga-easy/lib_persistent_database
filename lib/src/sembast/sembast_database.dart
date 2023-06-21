@@ -1,13 +1,12 @@
-import 'package:manga_easy_persistent_database_service/src/persistent_database_service.dart';
-import 'package:manga_easy_persistent_database_service/src/sembast/store_sembast_enum.dart';
+import 'package:persistent_database/src/persistent_database.dart';
+import 'package:persistent_database/src/sembast/store_sembast_enum.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sembast/sembast.dart';
 import 'package:sembast/sembast_io.dart';
 import 'package:uuid/uuid.dart';
 
-class PersistentDatabaseSembastService
-    implements PersistentDatabaseService<StoreSembast> {
+class PersistentDatabaseSembast implements PersistentDatabase<StoreSembast> {
   late final Database _db;
 
   @override
