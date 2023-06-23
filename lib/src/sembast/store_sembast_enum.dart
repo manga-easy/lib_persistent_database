@@ -7,5 +7,6 @@ enum StoreSembast {
   notificationV1,
   userPreference,
   exemple,
-  toggleConfig
+  toggleConfig,
+  download,//Responsavel pela as informações de download
 }

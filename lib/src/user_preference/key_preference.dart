@@ -1,4 +1,6 @@
 enum KeyPreferences {
+  //Responsavel por setar a pasta que vai ser baixada os download
+  downloadFolder(key: 'downloadFolder'),
   isShowWarningDownload(key: 'isShowWarningDownload'),
   // marca se deve exibir a introdução
   isBetaSearch(key: 'isBetaSearch'),
