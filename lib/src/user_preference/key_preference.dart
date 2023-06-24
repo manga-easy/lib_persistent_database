@@ -40,6 +40,8 @@ enum KeyPreferences {
   prefsUser(key: 'UserConfigModel'),
   // Muda o layout da pesquisa avançada
   selectLayoutSearch(key: 'selectLayoutSearch', defaultValue: false),
+  // Histórico da pesquisa avançada
+  searchHistory(key: 'searchHistory'),
   // indice do tema atual em int
   theme(key: 'themeApp', defaultValue: 0);
 
