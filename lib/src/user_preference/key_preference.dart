@@ -1,4 +1,6 @@
 enum KeyPreferences {
+  //Animação do Corrossel do banner
+  isAnimatedBanner(key: 'isAnimatedBanner', defaultValue: true),
   //Responsavel por setar a pasta que vai ser baixada os download
   downloadFolder(key: 'downloadFolder'),
   isShowWarningDownload(key: 'isShowWarningDownload'),
