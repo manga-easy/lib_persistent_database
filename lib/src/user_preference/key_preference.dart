@@ -49,7 +49,9 @@ enum KeyPreferences {
   // Histórico da pesquisa avançada
   searchHistory(key: 'searchHistory'),
   // indice do tema atual em int
-  theme(key: 'themeApp', defaultValue: 0);
+  theme(key: 'themeApp', defaultValue: 0),
+  // verifica se é a primeira vez que o usuário abre a tela de biblioteca
+  isFirstLibrary(key: 'isFirstLibrary', defaultValue: true);
 
   final String key;
   final dynamic defaultValue;
