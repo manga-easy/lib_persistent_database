@@ -1,8 +1,6 @@
 enum KeyPreferences {
   //Responsavel por setar a pasta que vai ser baixada os download
   downloadFolder(key: 'downloadFolder'),
-  //Responsavel por pausar todos os downloads
-  downloadPauseAll(key: 'downloadPause', defaultValue: false),
   isShowWarningDownload(key: 'isShowWarningDownload'),
   // marca se deve exibir a introdução
   isBetaSearch(key: 'isBetaSearch'),
