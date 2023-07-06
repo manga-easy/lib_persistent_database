@@ -1,6 +1,6 @@
 enum KeyPreferences {
   //Ver o email no perfil
-  seeGmail(key: 'seeGmail'),
+  obscureEmail(key: 'obscureEmail'),
   //Animação do Corrossel do banner
   isAnimatedBanner(key: 'isAnimatedBanner', defaultValue: true),
   //Responsavel por setar a pasta que vai ser baixada os download
