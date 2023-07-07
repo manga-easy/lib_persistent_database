@@ -1,4 +1,6 @@
 enum KeyPreferences {
+  //Ocultas as estatisticas do perfil
+  obscureStatistic(key: 'obscureStatistic'),
   //Ver o email no perfil
   obscureEmail(key: 'obscureEmail'),
   //Animação do Corrossel do banner
