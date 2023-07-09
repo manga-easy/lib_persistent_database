@@ -1,4 +1,8 @@
 enum KeyPreferences {
+  //Para selecionar a cor da pagina do manga
+  colorFilterManga(key: 'colorSelectFilter'),
+  //Opacidade da cor do filtro
+  opacityFilterManga(key: 'opacityFilterManga'),
   //Ocultas as estatisticas do perfil
   obscureStatistic(key: 'obscureStatistic'),
   //Ver o email no perfil
