@@ -1,8 +1,6 @@
 enum KeyPreferences {
   ///Para selecionar a cor da pagina do manga
   colorFilterManga(key: 'colorSelectFilter'),
-  ///Opacidade da cor do filtro do manga
-  opacityFilterManga(key: 'opacityFilterManga'),
   ///Modo de mesclagem do filtro da pagina de mangas
   modeFilterManga(key: 'modeFilterManga'),
   ///Ocultas as estatisticas do perfil
