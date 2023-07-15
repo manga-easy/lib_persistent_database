@@ -1,58 +1,58 @@
 enum KeyPreferences {
-  //Ocultas as estatisticas do perfil
+  ///Ocultas as estatisticas do perfil
   obscureStatistic(key: 'obscureStatistic'),
-  //Ver o email no perfil
+  ///Ver o email no perfil
   obscureEmail(key: 'obscureEmail'),
-  //Animação do Corrossel do banner
+  ///Animação do Corrossel do banner
   isAnimatedBanner(key: 'isAnimatedBanner', defaultValue: true),
-  //Responsavel por setar a pasta que vai ser baixada os download
+  ///Responsavel por setar a pasta que vai ser baixada os download
   downloadFolder(key: 'downloadFolder'),
   isShowWarningDownload(key: 'isShowWarningDownload'),
-  // marca se deve exibir a introdução
+  /// marca se deve exibir a introdução
   isBetaSearch(key: 'isBetaSearch'),
-  // marca se deve exibir a introdução
+  /// marca se deve exibir a introdução
   isIntruce(key: 'isIntruce'),
-  // salva o objeto blocklist que contem a lista de mangas bloqueado e +18
+  /// salva o objeto blocklist que contem a lista de mangas bloqueado e +18
   blockList(key: 'blockList'),
-  //salva as iniciais do avatar do usuario
+  ///salva as iniciais do avatar do usuario
   avatar(key: 'avatar'),
-  //dados da config atual do app
+  ///dados da config atual do app
   configApp(key: 'ConfigApp'),
-  // dia da ultima sugestão que foi enviada do app em int
+  /// dia da ultima sugestão que foi enviada do app em int
   sugestao(key: 'sugestao'),
-  // token de fcm usado para notificação
+  /// token de fcm usado para notificação
   tonkenFcm(key: 'tonkenFcm'),
-  //Salvar o usuario logado
+  ///Salvar o usuario logado
   user(key: 'user'),
-  //versão atual do banco local.
+  ///versão atual do banco local.
   versionDatabase(key: 'versionDatabase', defaultValue: '1.0'),
-  // indica se o filtro de obras +18 está ativo
+  /// indica se o filtro de obras +18 está ativo
   filterContentOver18(
     key: 'filterContentOver18',
     defaultValue: true,
   ),
-  //mostrar aviso de mostra opção leitor
+  ///mostrar aviso de mostra opção leitor
   mostraAvisoLeitor(key: 'mostraAvisoLeitor', defaultValue: true),
-  // inverte a listagem capitulos no manga
+  /// inverte a listagem capitulos no manga
   invertCapitulos(key: 'invertCapitulos'),
-  // data da ultima ADS em timestaimp
+  /// data da ultima ADS em timestaimp
   ultimaADS(key: 'ultimaADS'),
-  // data da ultima sincronização em timestaimp
+  /// data da ultima sincronização em timestaimp
   ultimaSincronizacao(
     key: 'ultimaSincronizacao',
     defaultValue: '',
   ),
-  // salva a pagina de onde parou nos capitulos
+  /// salva a pagina de onde parou nos capitulos
   salvePag(key: 'spc'),
-  // Preferencias do usuario
-  prefsUser(key: 'UserConfigModel'),
-  // Muda o layout da pesquisa avançada
+  /// Preferencias do usuario na pagina de leitura do manga
+  readPrefs(key: 'mangaPagePrefs'),
+  /// Muda o layout da pesquisa avançada
   selectLayoutSearch(key: 'selectLayoutSearch', defaultValue: false),
-  // Histórico da pesquisa avançada
+  /// Histórico da pesquisa avançada
   searchHistory(key: 'searchHistory', defaultValue: []),
-  // indice do tema atual em int
+  /// indice do tema atual em int
   theme(key: 'themeApp', defaultValue: 0),
-  // verifica se é a primeira vez que o usuário abre a tela de biblioteca
+  /// verifica se é a primeira vez que o usuário abre a tela de biblioteca
   isFirstLibrary(key: 'isFirstLibrary', defaultValue: true);
 
   final String key;
