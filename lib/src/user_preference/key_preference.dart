@@ -47,7 +47,7 @@ enum KeyPreferences {
   /// salva a pagina de onde parou nos capitulos
   salvePag(key: 'spc'),
   /// Preferencias do usuario na pagina de leitura do manga
-  readPrefs(key: 'mangaPagePrefs'),
+  mangaReadPrefs(key: 'mangaPagePrefs'),
   /// Muda o layout da pesquisa avançada
   selectLayoutSearch(key: 'selectLayoutSearch', defaultValue: false),
   /// Histórico da pesquisa avançada
