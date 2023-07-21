@@ -5,6 +5,8 @@ enum KeyPreferences {
   obscureEmail(key: 'obscureEmail'),
   ///Animação do Corrossel do banner
   isAnimatedBanner(key: 'isAnimatedBanner', defaultValue: true),
+  //Responsavel por pausar todos downloads dos mangas
+  downloadPauseAll(key: 'downloadPauseAll', defaultValue: false),
   ///Responsavel por setar a pasta que vai ser baixada os download
   downloadFolder(key: 'downloadFolder'),
   isShowWarningDownload(key: 'isShowWarningDownload'),
