@@ -1,4 +1,6 @@
 enum KeyPreferences {
+  ///Ordenaçao dos capitulos do manga
+  chapterOrderPrefs(key: 'chapterOrderPrefs'),
   ///Ocultas as estatisticas do perfil
   obscureStatistic(key: 'obscureStatistic'),
   ///Ver o email no perfil
